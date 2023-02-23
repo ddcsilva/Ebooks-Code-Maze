@@ -34,8 +34,7 @@ app.Map("/usingmapbranch", builder =>
     });
 });
 
-app.MapWhen(context => context.Request.Query.ContainsKey("testquerystring"), builder
-=>
+app.MapWhen(context => context.Request.Query.ContainsKey("testquerystring"), builder =>
 {
     builder.Run(async context =>
     {
