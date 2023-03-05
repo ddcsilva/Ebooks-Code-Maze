@@ -1,4 +1,5 @@
 ﻿using FuncionariosCompanhia.Contracts;
+using FuncionariosCompanhia.LoggingService;
 
 namespace FuncionariosCompanhia.API.Extensions
 {
@@ -25,7 +26,7 @@ namespace FuncionariosCompanhia.API.Extensions
 
         public static void ConfigureLoggerService(this IServiceCollection services) 
         { 
-            services.AddSingleton<ILoggerManager, ILoggerManager>();
+            services.AddSingleton<ILoggerManager, LoggerManager>();
         }
     }
 }

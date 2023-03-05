@@ -3,11 +3,11 @@ using NLog;
 
 namespace FuncionariosCompanhia.LoggingService;
 
-public class LoggingManager : ILoggerManager
+public class LoggerManager : ILoggerManager
 {
     private static ILogger logger = LogManager.GetCurrentClassLogger();
 
-    public LoggingManager() {}
+    public LoggerManager() {}
 
     public void LogAdvertencia(string messagem) => logger.Warn(messagem);
 
