@@ -15,7 +15,7 @@ namespace FuncionariosCompanhia.API.ContextFactory
 
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
                 .UseSqlServer(configuration.GetConnectionString("sqlConnection"),
-                    b => b.MigrationsAssembly("CompanhiaFuncionarios"));
+                    b => b.MigrationsAssembly("FuncionariosCompanhia.API"));
             
             return new RepositoryContext(builder.Options);
         }
