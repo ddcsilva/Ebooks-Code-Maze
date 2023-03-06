@@ -19,7 +19,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FuncionariosCompanhia.LoggingService\FuncionariosCompanhia.LoggingService.csproj" />
+    <ProjectReference Include="..\FuncionariosCompanhia.Repository\FuncionariosCompanhia.Repository.csproj" />
   </ItemGroup>
 
 </Project>
