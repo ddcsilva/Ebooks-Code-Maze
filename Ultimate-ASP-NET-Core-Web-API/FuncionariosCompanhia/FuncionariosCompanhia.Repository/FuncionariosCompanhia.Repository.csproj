@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FuncionariosCompanhia.Contracts\FuncionariosCompanhia.Contracts.csproj" />
     <ProjectReference Include="..\FuncionariosCompanhia.Entities\FuncionariosCompanhia.Entities.csproj" />
   </ItemGroup>
 
