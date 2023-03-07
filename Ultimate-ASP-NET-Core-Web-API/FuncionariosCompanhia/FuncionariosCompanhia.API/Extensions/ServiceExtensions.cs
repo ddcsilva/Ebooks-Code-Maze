@@ -1,6 +1,8 @@
 ﻿using FuncionariosCompanhia.Contracts;
 using FuncionariosCompanhia.LoggingService;
 using FuncionariosCompanhia.Repository;
+using FuncionariosCompanhia.Services;
+using FuncionariosCompanhia.Services.Contracts;
 
 namespace FuncionariosCompanhia.API.Extensions
 {
@@ -33,6 +35,11 @@ namespace FuncionariosCompanhia.API.Extensions
         public static void ConfigureRepositoryManager(this IServiceCollection services)
         {
             services.AddScoped<IRepositoryManager, RepositoryManager>();
+        }
+
+        public static void ConfigureServiceManager(this IServiceCollection services)
+        {
+            services.AddScoped<IServiceManager, ServiceManager>();
         }
     }
 }
