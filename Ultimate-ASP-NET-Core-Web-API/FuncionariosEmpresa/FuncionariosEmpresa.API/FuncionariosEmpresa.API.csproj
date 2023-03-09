@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FuncionariosEmpresa.LoggingService\FuncionariosEmpresa.LoggingService.csproj" />
+    <ProjectReference Include="..\FuncionariosEmpresa.Presentation\FuncionariosEmpresa.Presentation.csproj" />
+    <ProjectReference Include="..\FuncionariosEmpresa.Repository\FuncionariosEmpresa.Repository.csproj" />
+    <ProjectReference Include="..\FuncionariosEmpresa.Services\FuncionariosEmpresa.Services.csproj" />
+  </ItemGroup>
+
+</Project>
